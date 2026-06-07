@@ -1,0 +1,746 @@
+<!-- Odoo Production Custom B2B/Imports Template 2 Block -->
+<div id="serendib-luxury-b2b" class="container-fluid p-0">
+  <!-- Load Ultra-Premium Typography Elements -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Absolute Template 2 Color Palette Matrix Integration[cite: 10] */
+    :root {
+      --volcanic-obsidian: #1D1816;  /* App Canvas Grid Backdrop[cite: 10] */
+      --roasted-cacao: #26201E;      /* Accent Elements / Cards[cite: 10] */
+      --saffron-terracotta: #D46A24; /* Call-To-Action (CTA)[cite: 10] */
+      --crisp-alabaster: #FFFDF9;    /* Primary Typography[cite: 10] */
+      --subtle-ash: #A69E9B;
+    }
+
+    /* Strict Global Structural Overrides to Suppress Odoo Native Footers */
+    body footer, 
+    body .o_footer, 
+    #wrapwrap > footer,
+    main + footer {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    #serendib-luxury-b2b {
+      background-color: var(--volcanic-obsidian);
+      color: var(--crisp-alabaster);
+      font-family: 'DM Sans', sans-serif; /* Interface Body Text Rules[cite: 10] */
+      overflow-x: hidden;
+      letter-spacing: -0.01em;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    /* Core Typographic Hierarchy[cite: 10] */
+    #serendib-luxury-b2b h1, 
+    #serendib-luxury-b2b h2, 
+    #serendib-luxury-b2b h3,
+    #serendib-luxury-b2b h4,
+    #serendib-luxury-b2b .serif-display {
+      font-family: 'Lora', serif; /* Display Headings Rules[cite: 10] */
+      color: var(--crisp-alabaster);
+    }
+
+    #serendib-luxury-b2b .italic-accent {
+      color: var(--saffron-terracotta);
+      font-style: italic;
+    }
+
+    /* Enhanced Advanced Cinematic Layout Configuration Assets */
+    @keyframes cinematicEntrance {
+      0% { opacity: 0; transform: translateY(20px); filter: blur(3px); }
+      100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+    }
+
+    @keyframes microPanHero {
+      0% { transform: scale(1.02); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1.02); }
+    }
+
+    .animate-cinematic-layer {
+      animation: cinematicEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    /* Layout Component Modules */
+    .b2b-hero-container {
+      position: relative;
+      padding: 100px 0;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .b2b-hero-image-pane {
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+
+    .b2b-hero-image-pane img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: microPanHero 20s ease-in-out infinite;
+    }
+
+    /* Metrics Row Architecture - Globally Center Aligned */
+    .metric-flex-track {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 35px;
+      border-top: 1px solid rgba(255, 253, 249, 0.06);
+      padding-top: 30px;
+    }
+
+    .metric-structural-item {
+      flex: 0 1 auto;
+      min-width: 120px;
+      text-align: center !important; 
+    }
+
+    .metric-structural-item h4 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--saffron-terracotta);
+      margin: 0;
+      line-height: 1.1;
+      text-align: center !important;
+    }
+
+    .metric-structural-item p {
+      font-size: 0.75rem;
+      color: var(--subtle-ash);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin: 6px 0 0 0;
+      text-align: center !important; /* Force center alignment layout to match image_5bf489.png */
+    }
+
+    /* Non-Stretching Action Buttons Configuration */
+    .hero-btn-group-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .btn-terracotta {
+      background-color: var(--saffron-terracotta);
+      color: var(--crisp-alabaster);
+      font-weight: 600;
+      border: 1px solid var(--saffron-terracotta);
+      padding: 14px 32px;
+      letter-spacing: 0.5px;
+      border-radius: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-terracotta:hover {
+      background-color: transparent;
+      color: var(--saffron-terracotta);
+      box-shadow: 0 0 30px rgba(212, 106, 36, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .btn-structural {
+      background-color: transparent;
+      color: var(--crisp-alabaster);
+      border: 1px solid rgba(255, 253, 249, 0.25);
+      padding: 14px 32px;
+      font-weight: 600;
+      border-radius: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-structural:hover {
+      border-color: var(--crisp-alabaster);
+      background-color: rgba(255, 253, 249, 0.06);
+      transform: translateY(-2px);
+    }
+
+    .luxury-badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--saffron-terracotta);
+      margin-bottom: 20px;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    /* Verification Ribbon System */
+    .credentials-ribbon {
+      background-color: var(--roasted-cacao);
+      border-top: 1px solid rgba(255, 253, 249, 0.02);
+      border-bottom: 1px solid rgba(255, 253, 249, 0.02);
+      padding: 24px 0;
+    }
+
+    .ribbon-item {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--subtle-ash);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .ribbon-item i {
+      color: var(--saffron-terracotta);
+    }
+
+    /* Feature Informational Pillars */
+    .pillar-card {
+      background-color: var(--roasted-cacao);
+      border: 1px solid rgba(255, 253, 249, 0.02);
+      padding: 45px 35px;
+      border-radius: 2px;
+      height: 100%;
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(212, 106, 36, 0.3);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .pillar-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .pillar-card ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .pillar-card li {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: var(--subtle-ash);
+    }
+
+    /* Primary Shipping Routes Table Layout */
+    .table-container-block {
+      background-color: var(--roasted-cacao);
+      border: 1px solid rgba(255, 253, 249, 0.02);
+      border-radius: 4px;
+      padding: 30px;
+      overflow-x: auto;
+    }
+
+    .custom-b2b-table {
+      width: 100%;
+      border-collapse: collapse;
+      color: var(--crisp-alabaster);
+    }
+
+    .custom-b2b-table th {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--saffron-terracotta);
+      padding: 16px;
+      border-bottom: 2px solid rgba(255, 253, 249, 0.05);
+      text-align: left;
+    }
+
+    .custom-b2b-table td {
+      font-size: 0.95rem;
+      padding: 16px;
+      border-bottom: 1px solid rgba(255, 253, 249, 0.03);
+      color: var(--subtle-ash);
+    }
+
+    /* RFQ Gateway Submission Card Layout */
+    .b2b-wrapper-panel {
+      background: linear-gradient(135deg, #2b1f1c 0%, #1e1715 100%);
+      border-radius: 4px;
+      padding: 60px;
+      border: 1px solid rgba(214, 106, 36, 0.05);
+    }
+
+    .commercial-box {
+      background-color: var(--volcanic-obsidian);
+      border-radius: 4px;
+      padding: 40px;
+      border: 1px solid rgba(255, 253, 249, 0.03);
+    }
+
+    .commercial-box label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--subtle-ash);
+      margin-bottom: 6px;
+      font-weight: 600;
+      display: block;
+    }
+
+    .commercial-box input,
+    .commercial-box select,
+    .commercial-box textarea {
+      background-color: var(--roasted-cacao);
+      border: 1px solid rgba(255, 253, 249, 0.08);
+      color: var(--crisp-alabaster);
+      padding: 12px;
+      font-size: 0.95rem;
+      border-radius: 2px;
+      width: 100%;
+    }
+
+    /* High Visibility Info Strip Blocks[cite: 12] */
+    .info-strip-card {
+      background-color: rgba(0, 0, 0, 0.25);
+      border-left: 4px solid var(--saffron-terracotta);
+      padding: 24px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* High Visibility Color Contrast Rules[cite: 12] */
+    .info-strip-card .caption-highlight-white {
+      color: #FFFFFF !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+      opacity: 1 !important;
+      margin: 8px 0 0 0 !important;
+      font-weight: 400 !important;
+    }
+
+    /* Custom Unified Footer Base Setup */
+    .footer-base {
+      background-color: #14100f !important;
+      border-top: 1px solid rgba(255, 253, 249, 0.03);
+      padding: 80px 0 30px 0;
+      font-size: 0.9rem;
+      display: block !important;
+      visibility: visible !important;
+      margin-top: 90px;
+    }
+
+    .footer-header {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--saffron-terracotta);
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    .footer-link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-link-list li {
+      margin-bottom: 12px;
+    }
+
+    .footer-link-list a {
+      color: var(--subtle-ash);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    /* Mobile Contextual Refinements and Strict Boundaries Override Matrix */
+    @media (max-width: 991.98px) {
+      /* Exclude metrics items explicitly from the general text justification rule */
+      #serendib-luxury-b2b p:not(.metric-structural-item p),
+      #serendib-luxury-b2b .lh-base,
+      #serendib-luxury-b2b font,
+      #serendib-luxury-b2b li,
+      #serendib-luxury-b2b span:not(.luxury-badge):not(.metric-structural-item span):not(.metric-structural-item p) {
+        text-align: justify !important;
+      }
+
+      .b2b-hero-container {
+        padding: 40px 0;
+      }
+
+      .b2b-hero-image-pane {
+        margin-bottom: 25px;
+      }
+
+      .hero-btn-group-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn-terracotta, .btn-structural {
+        align-self: stretch;
+      }
+
+      /* Exact Stacking and High Precision Center Target Mapping for image_5bf489.png Specifications */
+      .metric-flex-track {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 30px !important;
+      }
+
+      .metric-structural-item {
+        text-align: center !important;
+        width: 100% !important;
+      }
+
+      .metric-structural-item h4,
+      .metric-structural-item p {
+        text-align: center !important; /* Forces strict override against native block containers */
+      }
+
+      .b2b-wrapper-panel {
+        padding: 30px 20px;
+      }
+
+      .commercial-box {
+        padding: 25px 20px;
+      }
+
+      .table-container-block {
+        padding: 15px;
+      }
+
+      .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      
+      .col-12, .col-6 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+      }
+    }
+  </style>
+
+  <!-- SECTION 1: CINEMATIC HERO LAYER WITH PROTECTION ROUTINES -->
+  <section class="b2b-hero-container px-3 px-lg-5">
+    <div class="container-fluid p-0 animate-cinematic-layer">
+      <div class="row align-items-center g-4 g-lg-5">
+        
+        <!-- Hero Graphic Frame: Rendered First (Order 1) on Mobile Viewports -->
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+          <div class="b2b-hero-image-pane">
+            <img src="/web/image/serendib-b2b-hero-target" alt="Global Bulk Import Solutions Asset View" onerror="this.src='https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1200&q=80'"/>
+          </div>
+        </div>
+
+        <!-- Hero Content Frame: Positioned below Graphic Layer on Mobile devices -->
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+          <span class="luxury-badge">Wholesale &amp; Export</span>
+          <h1 class="display-4 fw-bold mb-4" style="line-height: 1.15;">Global Wholesale &amp;<br>Bulk Import Solutions</h1>
+          <p class="fs-5 mb-4" style="color: var(--subtle-ash); max-width: 540px; line-height: 1.6;">
+            Serendib Spices partners with dedicated chefs, luxury hospitality, and gourmet manufacturing networks globally, matching uncompromising quality with seamless international logistics capabilities under custom order streams.
+          </p>
+          
+          <!-- Unified Action Button Group with Extrusion Countermeasures -->
+          <div class="hero-btn-group-wrapper">
+            <a href="#" class="btn btn-terracotta">Download Price Catalog</a>
+            <a href="#" class="btn btn-structural">Wholesale Portal</a>
+          </div>
+          
+          <!-- Absolute Center-Aligned Metrics Rows Enforcing Specificity Controls to Resolve Left-Alignment Defects -->
+          <div class="metric-flex-track">
+            <div class="metric-structural-item">
+              <h4>500t</h4>
+              <p>Shipped Yearly</p>
+            </div>
+            <div class="metric-structural-item">
+              <h4>28</h4>
+              <p>Export Countries</p>
+            </div>
+            <div class="metric-structural-item">
+              <h4>25kg</h4>
+              <p>Minimum MOQ</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: VERIFICATION CREDENTIALS RIBBON -->
+  <section class="credentials-ribbon px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="row g-3 justify-content-between text-center text-lg-start">
+        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-lg-start align-items-center gap-2 ribbon-item">
+          <i class="fa fa-globe"></i> <span>Global Quality Alliance Verified</span>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center gap-2 ribbon-item">
+          <i class="fa fa-certificate"></i> <span>EuroCert Certified Standards</span>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-lg-end align-items-center gap-2 ribbon-item">
+          <i class="fa fa-anchor"></i> <span>SL Port Authority Approved</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: CORE CAPABILITIES PILLARS WITH CINEMATIC MOTION EFFECTS -->
+  <section class="py-5 px-3 px-lg-5">
+    <div class="container-fluid p-0 py-lg-4">
+      <div class="text-center mb-5 pb-2">
+        <span class="luxury-badge mb-1">Built for Global Commerce</span>
+        <h2 class="display-5 fw-bold">Commercial Supply Architecture</h2>
+      </div>
+      <div class="row g-4">
+        
+        <!-- Pillar Module 1 -->
+        <div class="col-12 col-lg-4">
+          <div class="pillar-card">
+            <h3 class="serif-display">Custom Bulk Packaging</h3>
+            <ul>
+              <li>Traditional multi-layer heavy jute export sacks</li>
+              <li>Dehydrated vacuum sealing for volatile oils preservation</li>
+              <li>Variable weight configurations from 25kg up to metric tons</li>
+              <li>Eco-friendly biodegradable inner linings</li>
+              <li>Custom corporate markings &amp; private labeling support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar Module 2 -->
+        <div class="col-12 col-lg-4">
+          <div class="pillar-card">
+            <h3 class="serif-display">International Certifications</h3>
+            <ul>
+              <li>ISO 22000 Food Safety Management validation</li>
+              <li>HACCP systematically audited production plants</li>
+              <li>100% Organic USDA and Euro Leaf credentials</li>
+              <li>Phytosanitary clearances issued for every batch</li>
+              <li>Strict trace logs mapping back to single-estate farms</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar Module 3 -->
+        <div class="col-12 col-lg-4">
+          <div class="pillar-card">
+            <h3 class="serif-display">Global Logistics Network</h3>
+            <ul>
+              <li>Flexible FOB Colombo or comprehensive CIF delivery terms</li>
+              <li>Direct maritime routes via global shipping alliances</li>
+              <li>Full container load (FCL) &amp; shared cargo spaces (LCL)</li>
+              <li>Expedited custom clearances documentation support</li>
+              <li>End-to-end cold-chain option capabilities</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PRIMARY SHIPPING ROUTES TABLE CONTAINER -->
+  <section class="py-4 px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="mb-4">
+        <span class="luxury-badge mb-1">Global Freight Infrastructure</span>
+        <h2 class="display-6 fw-bold m-0 serif-display">Primary Shipping Routes</h2>
+      </div>
+      <div class="table-container-block">
+        <table class="custom-b2b-table">
+          <thead>
+            <tr>
+              <th>Hub Region</th>
+              <th>Term Rule</th>
+              <th>Transit Est.</th>
+              <th>Min Capacity</th>
+              <th>Pre-FOB Inspection</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>European Union</td>
+              <td>CIF Rotterdam</td>
+              <td>22 - 26 Days</td>
+              <td>5 Metric Tons</td>
+              <td>SGS / Bureau Veritas</td>
+            </tr>
+            <tr>
+              <td>United Kingdom</td>
+              <td>CIF Felixstowe</td>
+              <td>24 - 28 Days</td>
+              <td>5 Metric Tons</td>
+              <td>SGS Checked</td>
+            </tr>
+            <tr>
+              <td>North America</td>
+              <td>FOB Colombo</td>
+              <td>30 - 35 Days</td>
+              <td>10 Metric Tons</td>
+              <td>SGS / QIMA Standards</td>
+            </tr>
+            <tr>
+              <td>Middle East &amp; Gulf</td>
+              <td>CIF Jebel Ali</td>
+              <td>10 - 14 Days</td>
+              <td>2 Metric Tons</td>
+              <td>SGS Certified</td>
+            </tr>
+            <tr>
+              <td>Singapore (ASEAN)</td>
+              <td>FOB Colombo</td>
+              <td>8 - 12 Days</td>
+              <td>2 Metric Tons</td>
+              <td>SGS / Bureau Veritas</td>
+            </tr>
+            <tr>
+              <td>Australia (APAC)</td>
+              <td>CIF Melbourne</td>
+              <td>18 - 22 Days</td>
+              <td>5 Metric Tons</td>
+              <td>AQIS Strict Approved</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: COMMERCIAL QUOTE GATEWAY FORM & HIGH VISIBILITY INFORMATIONAL STRIPS -->
+  <section class="py-5 px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="b2b-wrapper-panel row align-items-center g-4 g-lg-5">
+        
+        <div class="col-12 col-lg-5">
+          <span class="luxury-badge mb-2">Partnership Inquiries</span>
+          <h2 class="display-5 mb-4 fw-bold">Start Your <span class="italic-accent">Supply</span> Partnership</h2>
+          <p class="fs-6 mb-4" style="color: var(--subtle-ash); line-height: 1.6;">
+            Connect directly with our corporate logistics office. Our trade specialists configure pricing scales based on volume tiers, packaging specs, and custom freight demands.
+          </p>
+          
+          <!-- Explicit High-Visibility Verification Strips Rectifying Image-Level Defects[cite: 12] -->
+          <div class="d-flex flex-column gap-3 mt-4">
+            <div class="info-strip-card">
+              <h4 class="h5 fw-bold mb-1 text-white">24-Hour Corporate SLA</h4>
+              <p class="caption-highlight-white">All valid export catalog matching and commercial RFQs evaluated within 24 business hours.</p>
+            </div>
+            <div class="info-strip-card">
+              <h4 class="h5 fw-bold mb-1 text-white">Sample Allocation Program</h4>
+              <p class="caption-highlight-white">Verified manufacturing and importing operations qualify for complimentary sample evaluations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="commercial-box shadow-lg">
+            <h3 class="h4 mb-4 fw-bold text-center serif-display">Request FOB/CIF Quote</h3>
+            <form action="/website/form/" method="post" data-model_name="crm.lead">
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="company_name">Company Name</label>
+                  <input type="text" id="company_name" name="partner_name" placeholder="Legal corporate name" required="1">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="dest_country">Destination Country</label>
+                  <select id="dest_country" name="country_id" required="1">
+                    <option value="">Select country...</option>
+                    <option value="US">United States</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="DE">Germany</option>
+                    <option value="GB">United Kingdom</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="spices_interest">Commodities Required</label>
+                  <input type="text" id="spices_interest" name="spices" placeholder="e.g., Alba Cinnamon, Black Pepper">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="est_volume">Target Quantity Tiers</label>
+                  <input type="text" id="est_volume" name="volume" placeholder="Estimated volume in Tons">
+                </div>
+                <div class="col-12">
+                  <label for="pack_specs">Packaging &amp; Distribution Parameters</label>
+                  <textarea id="pack_specs" name="description" rows="3" placeholder="Specify requirements for private labeling, customized jute parameters, or specific certifications..."></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-terracotta w-100 py-3">Submit Secure RFQ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: EXCLUSIVE SYSTEM FOOTER DEPLOYMENT FRAME -->
+  <div class="footer-base px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="row g-5 mb-5">
+        <div class="col-12 col-lg-4">
+          <h3 class="h4 mb-3 fw-bold tracking-tight serif-display">SERENDIB SPICE</h3>
+          <p class="lh-base mb-4" style="color: var(--subtle-ash); font-size: 0.95rem; line-height: 1.6;">
+            Honoring the ancient heritage of the Spice Route, Serendib Spices is dedicated to preserving the purity and soul of Sri Lankan artisanal cultivation.
+          </p>
+          <div class="d-flex gap-3 fs-5" style="color: var(--subtle-ash);">
+            <a href="#" class="text-reset"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="text-reset"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="text-reset"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer-header">Discover</div>
+          <ul class="footer-link-list">
+            <li><a href="#">Shop All Spices</a></li>
+            <li><a href="#">Gift Collections</a></li>
+            <li><a href="#">Artisanal Blends</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Recipe Journal</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer-header">Our Legacy</div>
+          <ul class="footer-link-list">
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Farmer's Cooperative</a></li>
+            <li><a href="#">Sustainability Council</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-header">The Insider</div>
+          <p class="small mb-3" style="color: var(--subtle-ash); line-height: 1.5;">Join our inner circle for early access to limited seasonal harvests and exclusive culinary insights.</p>
+          <form action="/website/form/" method="post" data-model_name="crm.lead" class="d-flex flex-column gap-2">
+            <input type="email" class="form-control p-2" placeholder="Email Address" style="background-color: var(--roasted-cacao); border: 1px solid rgba(255,253,249,0.05); color: #fff;" required="1"/>
+            <button type="submit" class="btn btn-terracotta py-2">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" style="border-top: 1px solid rgba(255,253,249,0.05); font-size: 0.8rem; color: var(--subtle-ash);">
+        <div>&copy; 2026 SERENDIB SPICE HAVEN. ALL RIGHTS RESERVED.</div>
+        <div class="d-flex gap-4">
+          <a href="#" class="text-reset text-decoration-none">PRIVACY POLICY</a>
+          <a href="#" class="text-reset text-decoration-none">TERMS OF SERVICE</a>
+          <a href="#" class="text-reset text-decoration-none">SHIPPING &amp; RETURNS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
